@@ -1,4 +1,3 @@
-
 // require Express (used for routing and stuff)
 var express = require('express');
 var app = express();
@@ -34,7 +33,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/kittens', function(req, res){
-    res.send("Page under construction!");
+    res.send("Page under construction! We've dispatched a group of trained kittens to fix the problem.");
 });
 
 app.get('/about', function(req, res){
@@ -63,12 +62,12 @@ app.get('*', function(req, res){
 
 // Starts the nodejs server on port 9000
 var server = app.listen(9000, function(){
-   var host = server.address().address;
-   var port = server.address().port;
+    var host = server.address().address;
+    var port = server.address().port;
 
-   console.log("server listening on http://%s:%s", host, port);
+    console.log("server listening on http://%s:%s", host, port);
 });
-
+es
 
 
 
