@@ -5,8 +5,7 @@ exports.stringLength = function(str){
 };
 
 
-exports.calculateGPA = function() {
-    var calculateGPA = function (grade, credit) {
+exports.calculateGPA = function (grade, credit) {
         var numGrade = 0;
         if (grade == 'A') {
             numGrade = 4;
@@ -23,6 +22,9 @@ exports.calculateGPA = function() {
 
         return (numGrade * credit) / credit;
     }
-   
-}
 
+
+
+exports.totalGPA = function(GPA1, GPA2, GPA3){
+        return (GPA1 + GPA2 + GPA3) / 3;
+    }
