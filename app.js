@@ -50,6 +50,16 @@ app.post('/petForm', function(req, res){
     console.log(req.body.newPet);
 });
 
+app.get('/GPA', function(req, res){
+    res.sendFile('GPA.html', options);
+    //console.log(req.query["newPet"]);
+});
+
+app.post('/GPA', function(req, res){
+    res.send(" Your GPA is: " + totalGPA(calculateGPA(letter1,cred1), calculateGPA(letter2,cred2), calculateGPA(letter3,cred3)));
+    console.log(req.body.newPet);
+});
+
 app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
