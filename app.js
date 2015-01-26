@@ -56,7 +56,7 @@ app.get('/GPA', function(req, res){
 });
 
 app.post('/GPA', function(req, res){
-    res.send(" Your GPA is: " + totalGPA(calculateGPA(letter1,cred1), calculateGPA(letter2,cred2), calculateGPA(letter3,cred3)));
+    res.send(" Your GPA is: " + tools.totalGPA(tools.calculateGPA(req.body.letter1,req.body.cred1), tools.calculateGPA(req.body.letter2,req.body.cred2), tools.calculateGPA(req.body.letter3,req.body.cred3)));
     console.log(req.body.newPet);
 });
 
