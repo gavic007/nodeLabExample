@@ -11,13 +11,16 @@ describe('testing basic functions', function(){
 
     //this test should fail.
     it('this test should fail!', function(){
-        expect(returnKittens()).toBe("Not Kittens!");
+        expect(returnKittens()).toBe("kittens");
     });
     //this test should add 2 to a number.
     it('this test should add 2 to a number', function(){
         expect(addTwo(3)).toBe(5);
     });
-
+    //this test should add 2 to a number.
+    it('this test should add 2 to a number', function(){
+        expect(addTwo(7)).toBe(9);
+    });
 
 });
 
