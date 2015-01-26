@@ -4,7 +4,7 @@
 /**
  * Takes no arguments, and creates a javascript alert in the client's browser.
  */
-    /*
+    /**
 var sendAlert = function(){
     alert("THIS IS AN ALERT!");
 };
@@ -31,3 +31,7 @@ var returnKittens = function(){
     alert("kittens");
 };
 
+
+var addTwo = function(num){
+    return num + 2;
+};
